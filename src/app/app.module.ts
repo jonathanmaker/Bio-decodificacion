@@ -7,6 +7,7 @@ import { BioAnalisisComponent } from './bio-analisis/bio-analisis.component';
 import { HipotesisComponent } from './hipotesis/hipotesis.component';
 import { BioModelacionComponent } from './bio-modelacion/bio-modelacion.component';
 import { HomeComponent } from './home/home.component';
+import { NavbarGeneralComponent } from './navbar-general/navbar-general.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { HomeComponent } from './home/home.component';
     BioAnalisisComponent,
     HipotesisComponent,
     BioModelacionComponent,
-    HomeComponent
+    HomeComponent,
+    NavbarGeneralComponent
   ],
   imports: [
     BrowserModule,

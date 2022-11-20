@@ -3,10 +3,18 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { BioAnalisisComponent } from './bio-analisis/bio-analisis.component';
+import { HipotesisComponent } from './hipotesis/hipotesis.component';
+import { BioModelacionComponent } from './bio-modelacion/bio-modelacion.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    BioAnalisisComponent,
+    HipotesisComponent,
+    BioModelacionComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

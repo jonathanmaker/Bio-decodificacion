@@ -15,7 +15,7 @@ export class BioAnalisisComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  public openPDF(): void {
+  openPDF(): void {
     let DATA: any = document.getElementById('htmlData');
     html2canvas(DATA).then((canvas) => {
       let fileWidth = 208;
@@ -24,7 +24,8 @@ export class BioAnalisisComponent implements OnInit {
       let PDF = new jsPDF('p', 'mm', 'a4');
       let position = 0;
       PDF.addImage(FILEURI, 'PNG', 0, position, fileWidth, fileHeight);
-      PDF.save('angular-demo.pdf');
+      console.log('se agrega imagen')
+      PDF.save('ficha-conflictual.pdf');
     });
   }
 

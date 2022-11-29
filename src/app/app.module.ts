@@ -8,7 +8,12 @@ import { HipotesisComponent } from './hipotesis/hipotesis.component';
 import { BioModelacionComponent } from './bio-modelacion/bio-modelacion.component';
 import { HomeComponent } from './home/home.component';
 import { NavbarGeneralComponent } from './navbar-general/navbar-general.component';
-
+import { LoginComponent } from './login/login.component';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideAuth,getAuth } from '@angular/fire/auth';
+import { provideFirestore,getFirestore } from '@angular/fire/firestore';
+import { provideStorage,getStorage } from '@angular/fire/storage';
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,11 +21,16 @@ import { NavbarGeneralComponent } from './navbar-general/navbar-general.componen
     HipotesisComponent,
     BioModelacionComponent,
     HomeComponent,
-    NavbarGeneralComponent
+    NavbarGeneralComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideAuth(() => getAuth()),
+    provideFirestore(() => getFirestore()),
+    provideStorage(() => getStorage())
   ],
   providers: [],
   bootstrap: [AppComponent]

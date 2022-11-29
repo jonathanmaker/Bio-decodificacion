@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "ficha-conflictual": {
+      "hosting": {
+        "biodecodificacion": [
+          "ficha-conflictual"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "ficha-conflictual"
+  }
+}

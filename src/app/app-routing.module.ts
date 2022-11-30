@@ -4,9 +4,11 @@ import { BioAnalisisComponent } from './bio-analisis/bio-analisis.component';
 import { BioModelacionComponent } from './bio-modelacion/bio-modelacion.component';
 import { HipotesisComponent } from './hipotesis/hipotesis.component';
 import { HomeComponent } from './home/home.component';
+import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
-  {path:'',component: HomeComponent},
+  {path:'', component: LoginComponent},
+  {path:'login',component: LoginComponent},
   {path:'home', component: HomeComponent},
   {path:'bio-analisis', component:BioAnalisisComponent},
   {path:'bio-modelacion', component: BioModelacionComponent},

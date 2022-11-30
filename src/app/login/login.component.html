@@ -1,1 +1,19 @@
-<p>login works!</p>
+<div class="wraped">
+  <div class="body">
+    <img class="logo" src="assets/candado.png" alt="login">
+    <h1>login</h1>
+    <form (ngSubmit)="login()" [formGroup]="loginUsuario">
+      <div class="form-floating mb-3">
+        <input type="email"  formControlName="email" class="form-control" placeholder="name@example.com">
+        <label for="floatingInput">Email address</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input type="password" formControlName="password" class="form-control" placeholder="Password">
+        <label>Password</label>
+      </div>
+      <div class="d-grid gap-2">
+        <button class="btn btn-primary btn-lg" type="submit">Ingresar</button>
+      </div>
+    </form>
+  </div>
+</div>
